@@ -9,12 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var controller: SumController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setUpData()
+        setUpUI()
     }
-
+    
+    func setUpData() {
+        controller = SumController.init(viewController: self)
+    }
+    
+    func setUpUI() {
+        
+    }
 
 }
 

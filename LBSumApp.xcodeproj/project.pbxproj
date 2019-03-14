@@ -14,6 +14,9 @@
 		53AE14F8223A467B009305BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AE14F6223A467B009305BA /* LaunchScreen.storyboard */; };
 		53AE1503223A467B009305BA /* LBSumAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE1502223A467B009305BA /* LBSumAppTests.swift */; };
 		53AE150E223A467B009305BA /* LBSumAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE150D223A467B009305BA /* LBSumAppUITests.swift */; };
+		53AE151C223A5700009305BA /* SumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE151B223A5700009305BA /* SumController.swift */; };
+		53AE151E223A5763009305BA /* SumInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE151D223A5762009305BA /* SumInteractor.swift */; };
+		53AE1520223A576E009305BA /* SumRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE151F223A576E009305BA /* SumRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		53AE1509223A467B009305BA /* LBSumAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBSumAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AE150D223A467B009305BA /* LBSumAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSumAppUITests.swift; sourceTree = "<group>"; };
 		53AE150F223A467B009305BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53AE151B223A5700009305BA /* SumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumController.swift; sourceTree = "<group>"; };
+		53AE151D223A5762009305BA /* SumInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumInteractor.swift; sourceTree = "<group>"; };
+		53AE151F223A576E009305BA /* SumRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				53AE14ED223A4679009305BA /* AppDelegate.swift */,
 				53AE14EF223A4679009305BA /* ViewController.swift */,
+				53AE151B223A5700009305BA /* SumController.swift */,
+				53AE151D223A5762009305BA /* SumInteractor.swift */,
+				53AE151F223A576E009305BA /* SumRouter.swift */,
 				53AE14F1223A4679009305BA /* Main.storyboard */,
 				53AE14F4223A467B009305BA /* Assets.xcassets */,
 				53AE14F6223A467B009305BA /* LaunchScreen.storyboard */,
@@ -256,7 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AE1520223A576E009305BA /* SumRouter.swift in Sources */,
 				53AE14F0223A4679009305BA /* ViewController.swift in Sources */,
+				53AE151C223A5700009305BA /* SumController.swift in Sources */,
+				53AE151E223A5763009305BA /* SumInteractor.swift in Sources */,
 				53AE14EE223A4679009305BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
