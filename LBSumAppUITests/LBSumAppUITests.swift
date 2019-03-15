@@ -26,9 +26,70 @@ class LBSumAppUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testSum() {
+        
+        let app = XCUIApplication()
+        let button = app.buttons["2"]
+        button.tap()
+        app.buttons["4"].tap()
+        app.buttons["3"].tap()
+        app.buttons["6"].tap()
+        app.buttons["8"].tap()
+        button.tap()
+        
     }
+    
+    func testMultiple() {
+        
+        let app = XCUIApplication()
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).buttons["x"].tap()
+        let button = app.buttons["2"]
+        button.tap()
+        app.buttons["5"].tap()
+        app.buttons["4"].tap()
+        button.tap()
+        
+    }
+    
+    func testPrime() {
+        let app = XCUIApplication()
+        app.buttons["Prime"].tap()
+        app.buttons["4"].tap()
+        app.buttons["5"].tap()
+        app.buttons["6"].tap()
+    }
+    
+    func testFibonaci() {
+        let app = XCUIApplication()
+        app.buttons["Fibonaci"].tap()
+        app.buttons["4"].tap()
+        app.buttons["5"].tap()
+        app.buttons["6"].tap()
+    }
+    
+    func testAll() {
+        let app = XCUIApplication()
+        app.buttons["2"].tap()
+        app.buttons["4"].tap()
+        app.buttons["3"].tap()
+        app.buttons["6"].tap()
+        app.buttons["8"].tap()
+        
+        app.buttons["x"].tap()
+        app.buttons["5"].tap()
+        app.buttons["4"].tap()
+        
+        app.buttons["Prime"].tap()
+        app.buttons["4"].tap()
+        app.buttons["5"].tap()
+        app.buttons["6"].tap()
+        
+        app.buttons["Fibonaci"].tap()
+        app.buttons["4"].tap()
+        app.buttons["5"].tap()
+        app.buttons["6"].tap()
+    }
+    
 
 }

@@ -48,12 +48,17 @@ class SumController: NSObject {
     }
     
     func fibonacci(n: Int) -> [Int] {
-        assert(n > 1)
-        var array = [0, 1]
-        while array.count < n {
-            array.append(array[array.count - 1] + array[array.count - 2])
+        if n < 1 {
+            return []
+        } else {
+            assert(n > 1)
+            var array = [0, 1]
+            while array.count < n {
+                array.append(array[array.count - 1] + array[array.count - 2])
+            }
+            return array
         }
-        return array
+        
     }
     
 }
