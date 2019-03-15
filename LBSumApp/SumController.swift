@@ -32,7 +32,7 @@ class SumController: NSObject {
         return a*b;
     }
     
-    func prime(n:Int) -> NSArray{
+    func prime(n:Int) -> [Int]{
         let data:NSMutableArray = [];
         var index:Int = 2
         while data.count < n {
@@ -44,7 +44,7 @@ class SumController: NSObject {
             
             index += 1
         }
-        return data
+        return data as! [Int]
     }
     
     func fibonacci(n: Int) -> [Int] {

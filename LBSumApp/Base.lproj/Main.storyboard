@@ -157,7 +157,7 @@
                                                 <color key="backgroundColor" red="0.86550140379999996" green="0.90155869720000004" blue="0.93487054110000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="30"/>
                                                 <state key="normal" title=",">
-                                                    <color key="titleColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.51714342830000004" green="0.8613156676" blue="0.77611756320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="onClickNewCharacter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4fa-BB-1Im"/>
@@ -198,10 +198,10 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNC-Dh-6GL">
                                                 <rect key="frame" x="210" y="442" width="105" height="144"/>
-                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.7280875428082193" green="0.058823529409999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="30"/>
-                                                <state key="normal" title="=">
-                                                    <color key="titleColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="x">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <state key="highlighted">
                                                     <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -223,7 +223,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3an-J5-f12">
                                                 <rect key="frame" x="105" y="10" width="105" height="144"/>
-                                                <color key="backgroundColor" red="0.51714342830000004" green="0.8613156676" blue="0.77611756320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.51764705882352935" green="0.86131566762924194" blue="0.77611756324768066" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="30"/>
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -361,6 +361,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="fibButton" destination="hZB-iL-9CT" id="Kha-8d-Ea3"/>
+                        <outlet property="multipleButton" destination="5b7-w9-3pe" id="4fp-Kt-XGZ"/>
+                        <outlet property="plusButton" destination="liE-FP-1SH" id="ZrX-7T-HlT"/>
+                        <outlet property="primeButton" destination="Z4Z-fG-EFJ" id="T4z-qE-ufB"/>
                         <outlet property="totalLabel" destination="eqX-qH-n6h" id="gW8-31-rya"/>
                     </connections>
                 </viewController>
