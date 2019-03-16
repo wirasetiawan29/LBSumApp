@@ -35,7 +35,7 @@ class SumController: NSObject {
     }
     
     func configureInputValue(value:String) {
-        if value == "x" {
+        if value == "X" {
             resetValue()
         } else if firstLoad {
             temp = Int(value)!
